@@ -1,8 +1,6 @@
-#Key Sprints
+# Key Sprints
 
 <img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="https://user-images.githubusercontent.com/39578778/187084111-97d69aa7-53e4-46b9-b156-3ecc4d180d08.png">
-
-## [www.eletypes.com](https://www.eletypes.com) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/gamer-ai/eletype-frontend?include_prereleases) ![GitHub stars](https://img.shields.io/github/stars/gamer-ai/eletype-frontend?style=social) ![GitHub forks](https://img.shields.io/github/forks/gamer-ai/eletype-frontend?style=social)
 
 An elegant typing test tool.
 
