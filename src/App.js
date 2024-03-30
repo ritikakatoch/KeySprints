@@ -7,7 +7,6 @@ import SentenceBox from "./components/features/SentenceBox/SentenceBox";
 import Logo from "./components/common/Logo";
 import MusicPlayerSnackbar from "./components/features/MusicPlayer/MusicPlayerSnackbar";
 import FooterMenu from "./components/common/FooterMenu";
-import FreeTypingBox from "./components/features/FreeTypingBox";
 import {
   GAME_MODE,
   GAME_MODE_DEFAULT,
@@ -196,13 +195,6 @@ function App() {
               key="sentence-box"
               handleInputFocus={() => focusSentenceInput()}
             ></SentenceBox>
-          )}
-          {isCoffeeMode && !isTrainerMode && !isWordsCardMode && (
-            <FreeTypingBox
-              textAreaRef={textAreaRef}
-              soundMode={soundMode}
-              soundType={soundType}
-            />
           )}
           {isTrainerMode && !isCoffeeMode && !isWordsCardMode && (
             <DefaultKeyboard

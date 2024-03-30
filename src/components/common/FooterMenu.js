@@ -8,7 +8,7 @@ import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import Select from "../utils/Select";
 import {
   FOCUS_MODE,
-  FREE_MODE,
+  // FREE_MODE,
   MUSIC_MODE,
   WORD_MODE_LABEL,
   SENTENCE_MODE_LABEL,
@@ -18,7 +18,6 @@ import {
   WORDS_CARD_MODE
 } from "../../constants/Constants";
 import { Link } from "@mui/material";
-import SupportMe from "../features/SupportMe";
 import {
   GITHUB_TOOLTIP_TITLE,
   AUTHOR,
@@ -28,8 +27,6 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import KeyboardAltIcon from "@mui/icons-material/KeyboardAlt";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import EmojiFoodBeverageIcon from "@mui/icons-material/EmojiFoodBeverage";
-import { ReactComponent as DiscordIcon } from "../../assets/Icons/discord.svg";
-import { SvgIcon } from "@mui/material";
 import KeyboardAltOutlinedIcon from '@mui/icons-material/KeyboardAltOutlined';
 import SchoolIcon from '@mui/icons-material/School';
 import { SOUND_MODE_TOOLTIP } from "../features/sound/sound";
@@ -122,17 +119,17 @@ const FooterMenu = ({
               </span>
             </Tooltip>
           </IconButton>
-          <IconButton onClick={toggleCoffeeMode}>
+          {/* <IconButton onClick={toggleCoffeeMode}>
             <Tooltip
-              title={
-                <span style={{ whiteSpace: "pre-line" }}>{FREE_MODE}</span>
-              }
+              // title={
+              //   <span style={{ whiteSpace: "pre-line" }}>{FREE_MODE}</span>
+              // }
             >
               <span className={getModeButtonClassName(isCoffeeMode)}>
                 <EmojiFoodBeverageIcon fontSize="medium"></EmojiFoodBeverageIcon>
               </span>
             </Tooltip>
-          </IconButton>
+          </IconButton> */}
           <IconButton onClick={toggleTrainerMode}>
             <Tooltip title={TRAINER_MODE}>
               <span className={getModeButtonClassName(isTrainerMode)}>
@@ -182,20 +179,19 @@ const FooterMenu = ({
         </Box>
         {!isSiteInfoDisabled && (
           <Box display="block" flexDirection="row">
-            <SupportMe></SupportMe>
             <Tooltip
               title={
                 <span style={{ whiteSpace: "pre-line", fontSize:"12px" }}>
                   {GITHUB_TOOLTIP_TITLE}
                     <Link
                       margin="inherit"
-                      href="https://muyangguo.xyz"
+                      href="https://github.com/ritikakatoch"
                     >
                       {AUTHOR}
                     </Link>
                     <Link
                       margin="inherit"
-                      href="https://github.com/gamer-ai/eletype-frontend/"
+                      href="https://github.com/ritikakatoch"
                     >
                       {GITHUB_REPO_LINK}
                     </Link>
@@ -204,32 +200,10 @@ const FooterMenu = ({
               placement="top-start"
             >
               <IconButton
-                href="https://github.com/gamer-ai/eletype-frontend/"
+                href="https://github.com/ritikakatoch"
                 color="inherit"
               >
                 <GitHubIcon></GitHubIcon>
-              </IconButton>
-            </Tooltip>
-            <Tooltip
-              title={
-                <span style={{ whiteSpace: "pre-line" }}>
-                  <iframe
-                  title="discord-widget"
-                    src="https://discord.com/widget?id=993567075589181621&theme=dark"
-                    width="100%"
-                    height="300"
-                    allowtransparency="true"
-                    frameborder="0"
-                    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-                  ></iframe>
-                </span>
-              }
-              placement="top-start"
-            >
-              <IconButton color="inherit">
-                <SvgIcon>
-                  <DiscordIcon></DiscordIcon>
-                </SvgIcon>
               </IconButton>
             </Tooltip>
           </Box>
@@ -237,11 +211,11 @@ const FooterMenu = ({
         {isBottomLogoEnabled && (
           <Box display="block" flexDirection="row" className="bottom-info">
             <IconButton
-              href="https://github.com/gamer-ai/eletype-frontend/"
+              href="https://github.com/ritikakatoch"
               color="inherit"
             >
               <span>
-                Ele Types <KeyboardAltIcon fontSize="small" />
+                Key Sprints <KeyboardAltIcon fontSize="small" />
               </span>
             </IconButton>
           </Box>

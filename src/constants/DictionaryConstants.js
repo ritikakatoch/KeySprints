@@ -1,12 +1,12 @@
 import GREWordsInterpretations from "../assets/Vocab/GREWords.json";
 import TOEFLWordsInterpretations from "../assets/Vocab/TOEFLWords.json";
-import CET6WordsInterpretations from "../assets/Vocab/CET6Words.json";
-import CET4WordsInterpretations from "../assets/Vocab/CET4Words.json"
+// import CET6WordsInterpretations from "../assets/Vocab/CET6Words.json";
+// import CET4WordsInterpretations from "../assets/Vocab/CET4Words.json"
 
 const GRE_WORDS = GREWordsInterpretations;
 const TOEFL_WORDS = TOEFLWordsInterpretations;
-const CET6_WORDS = CET6WordsInterpretations;
-const CET4_WORDS = CET4WordsInterpretations;
+// const CET6_WORDS = CET6WordsInterpretations;
+// const CET4_WORDS = CET4WordsInterpretations;
 
 const GRE_WORDS_CATALOG = {
   a: [0, 502],
@@ -65,7 +65,7 @@ const TOEFL_WORDS_CATALOG = {
   y: [2861, 2864],
   z: [4513, 4515],
 };
-
+/*
 const CET6_WORDS_CATALOG = {
   a: [0, 178],
   b: [179, 264],
@@ -123,19 +123,19 @@ const CET4_WORDS_CATALOG = {
   y: [4590, 4607],
   z: [4608, 4613],
 };
-
+*/
 const DICTIONARY_SOURCE_CATALOG = {
   GRE: GRE_WORDS_CATALOG,
   TOEFL: TOEFL_WORDS_CATALOG,
-  CET6: CET6_WORDS_CATALOG,
-  CET4: CET4_WORDS_CATALOG
+  // CET6: CET6_WORDS_CATALOG,
+  // CET4: CET4_WORDS_CATALOG
 };
 
 const VOCAB_DICTIONARIES = {
   GRE: GRE_WORDS,
   TOEFL: TOEFL_WORDS,
-  CET6: CET6_WORDS,
-  CET4: CET4_WORDS
+  // CET6: CET6_WORDS,
+  // CET4: CET4_WORDS
 };
 
 const VOCAB_ORDER_OPTIONS = ["random", "alphabet"];

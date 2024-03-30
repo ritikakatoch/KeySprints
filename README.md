@@ -1,4 +1,4 @@
-# Ele types
+#Key Sprints
 
 <img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="https://user-images.githubusercontent.com/39578778/187084111-97d69aa7-53e4-46b9-b156-3ecc4d180d08.png">
 
@@ -9,19 +9,6 @@ An elegant typing test tool.
 > Typing rule and interactions was inspired by the famous [monkeytype.com](www.monkeytype.com);
 
 > The app was created purely in react.
-
-
-## Feature Requests / Issues / Bug Reports
-
-[![GitHub issues](https://img.shields.io/github/issues/gamer-ai/eletype-frontend)](https://github.com/gamer-ai/eletype-frontend/issues)
-
-https://github.com/gamer-ai/eletype-frontend/issues
-
-## Community Channel:
-
-![Discord](https://img.shields.io/discord/993567075589181621?style=for-the-badge)
-
-To join the community, please go to the website and hit "discord" icon.
 
 ## Current Features:
 

@@ -3,9 +3,9 @@ import KeyboardAltIcon from "@mui/icons-material/KeyboardAlt";
 
 const Logo = ({ isFocusedMode, isMusicMode }) => {
   return (
-    <div className="header" style={{visibility: isFocusedMode ? 'hidden' : 'visible' }}>
+    <div className="header" style={{visibility: isFocusedMode ? 'visible' : 'visible' }}>
       <h1>
-        Ele Types <KeyboardAltIcon fontSize="large" />
+        Key Sprints <KeyboardAltIcon fontSize="large" />
       </h1>
       <span className="sub-header">
         an elegant typing experience, just start typing
