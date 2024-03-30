@@ -133,12 +133,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 Builds the app for production to the `build` folder.\
 
 
-## Sponsors
-
-### Buy Me A Coffee:
-
-https://www.buymeacoffee.com/daguozi
-
 
 
 

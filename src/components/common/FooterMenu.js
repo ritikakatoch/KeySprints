@@ -26,7 +26,6 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import KeyboardAltIcon from "@mui/icons-material/KeyboardAlt";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
-import EmojiFoodBeverageIcon from "@mui/icons-material/EmojiFoodBeverage";
 import KeyboardAltOutlinedIcon from '@mui/icons-material/KeyboardAltOutlined';
 import SchoolIcon from '@mui/icons-material/School';
 import { SOUND_MODE_TOOLTIP } from "../features/sound/sound";

@@ -1,8 +1,8 @@
 FROM node:18
 
-WORKDIR /eletypes_react
+WORKDIR /keysprints
 
-ADD package.json package-lock.json /eletypes_react
+ADD package.json package-lock.json /keysprints
 
 RUN npm install
 
