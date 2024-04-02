@@ -11,7 +11,7 @@ const RESTART_BUTTON_TOOLTIP_TITLE = "[Tab] + [Enter] to quickly restart";
 const REDO_BUTTON_TOOLTIP_TITLE = "[Tab] + [Space] to quickly redo";
 const RESTART_BUTTON_TOOLTIP_TITLE_WORDSCARD = "[Tab] + [Enter] to quick restart the chapter";
 const SELECT_ONE_OR_MORE_CHAPTERS = "Open to select one or more chapters. Pick the chapters in the typing area."
-const RECITE_MODE_TITLE = "hide the word (默写模式)";
+const RECITE_MODE_TITLE = "hide the word";
 const DEFAULT_DIFFICULTY_TOOLTIP_TITLE =
   "normal mode generates random words from top 1000 most frequently used words in English dataset.";
 const HARD_DIFFICULTY_TOOLTIP_TITLE =
@@ -20,17 +20,17 @@ const CHAR_TOOLTIP_TITLE =
   "correct/incorrect/missing/extra\n extras are recorded even if deleted.";
 const SENTENCE_CHAR_TOOLTIP_TITLE = "correct/incorrect/extra\n";
 const ENGLISH_MODE_TOOLTIP_TITLE = "English Mode";
-const CHINESE_MODE_TOOLTIP_TITLE = "Chinese Pinyin Mode";
-const DEFAULT_DIFFICULTY_TOOLTIP_TITLE_CHINESE =
-  "normal mode generates random words from top 5000 most frequently used words in Chinese dataset.";
-const HARD_DIFFICULTY_TOOLTIP_TITLE_CHINESE =
-  "hard mode generates random words from top 1500 most used Chinese idioms.";
+// const CHINESE_MODE_TOOLTIP_TITLE = "Chinese Pinyin Mode";
+// const DEFAULT_DIFFICULTY_TOOLTIP_TITLE_CHINESE =
+//   "normal mode generates random words from top 5000 most frequently used words in Chinese dataset.";
+// const HARD_DIFFICULTY_TOOLTIP_TITLE_CHINESE =
+//   "hard mode generates random words from top 1500 most used Chinese idioms.";
 
 const GITHUB_TOOLTIP_TITLE =
   "Dear visitors: \n For feature requests or bug reports, please submit an issue to the github repo. \n Welcome contributing with a fork. \n If you like my works, please star the project. \n Thanks! \n";
 const SUPPORT_TOOLTIP_TITLE =
   "Help me keep the site live with your support : D \n Appreciate with love! \n";
-const AUTHOR = "author: @Muyang Guo\n";
+const AUTHOR = "author: @RitikaKatoch\n";
 const GITHUB_REPO_LINK = "project: @Github\n";
 
 const FOCUS_MODE = "Focus mode";
@@ -41,7 +41,7 @@ const FREE_MODE =
   "Free typing mode\nType any thing, no pressure, it's coffee time! \n ";
 
 const ENGLISH_MODE = "ENGLISH_MODE";
-const CHINESE_MODE = "CHINESE_MODE";
+// const CHINESE_MODE = "CHINESE_MODE";
 
 const GAME_MODE = "GAME_MODE";
 const GAME_MODE_DEFAULT = "WORD_MODE";
@@ -55,7 +55,7 @@ const TEN_SENTENCES_COUNT = 10;
 const FIFTEEN_SENTENCES_COUNT = 15;
 
 const ENGLISH_SENTENCE_MODE_TOOLTIP_TITLE = "English Sentence Mode";
-const CHINESE_SENTENCE_MODE_TOOLTIP_TITLE = "Chinese Sentence Mode";
+// const CHINESE_SENTENCE_MODE_TOOLTIP_TITLE = "Chinese Sentence Mode";
 
 const WORDS_CARD_MODE = "Words Card mode, learn something in typing!"
 
@@ -83,13 +83,13 @@ export {
   FOCUS_MODE,
   MUSIC_MODE,
   ENGLISH_MODE,
-  CHINESE_MODE,
+  // CHINESE_MODE,
   RESTART_BUTTON_TOOLTIP_TITLE,
   REDO_BUTTON_TOOLTIP_TITLE,
   ENGLISH_MODE_TOOLTIP_TITLE,
-  CHINESE_MODE_TOOLTIP_TITLE,
-  DEFAULT_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
-  HARD_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
+  // CHINESE_MODE_TOOLTIP_TITLE,
+  // DEFAULT_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
+  // HARD_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
   FREE_MODE,
   GAME_MODE,
   GAME_MODE_DEFAULT,
@@ -100,7 +100,7 @@ export {
   TEN_SENTENCES_COUNT,
   FIFTEEN_SENTENCES_COUNT,
   ENGLISH_SENTENCE_MODE_TOOLTIP_TITLE,
-  CHINESE_SENTENCE_MODE_TOOLTIP_TITLE,
+  // CHINESE_SENTENCE_MODE_TOOLTIP_TITLE,
   AUTHOR,
   GITHUB_REPO_LINK,
   TRAINER_MODE,

@@ -53,5 +53,4 @@ export default styled(Select)`
     color: ${({ theme }) => theme.text};
     background:  ${({ theme }) => theme.background};
   }
-
 `;

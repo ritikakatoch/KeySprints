@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useMemo } from "react";
 import useSound from "use-sound";
 import {
-  wordsGenerator,
-  chineseWordsGenerator,
+  wordsGenerator
 } from "../../../scripts/wordsGenerator";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import UndoIcon from "@mui/icons-material/Undo";
@@ -27,11 +26,9 @@ import {
   DEFAULT_DIFFICULTY_TOOLTIP_TITLE,
   HARD_DIFFICULTY_TOOLTIP_TITLE,
   ENGLISH_MODE,
-  CHINESE_MODE,
   ENGLISH_MODE_TOOLTIP_TITLE,
-  CHINESE_MODE_TOOLTIP_TITLE,
-  DEFAULT_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
-  HARD_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
+  // DEFAULT_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
+  // HARD_DIFFICULTY_TOOLTIP_TITLE_CHINESE,
   RESTART_BUTTON_TOOLTIP_TITLE,
   REDO_BUTTON_TOOLTIP_TITLE,
   PACING_CARET,
@@ -105,9 +102,9 @@ const TypeBox = ({
     if (language === ENGLISH_MODE) {
       return wordsGenerator(DEFAULT_WORDS_COUNT, difficulty, ENGLISH_MODE);
     }
-    if (language === CHINESE_MODE) {
-      return chineseWordsGenerator(difficulty, CHINESE_MODE);
-    }
+    // if (language === CHINESE_MODE) {
+    //   return chineseWordsGenerator(difficulty, CHINESE_MODE);
+    // }
   });
 
   const words = useMemo(() => {
@@ -170,13 +167,13 @@ const TypeBox = ({
         );
         setWordsDict((currentArray) => [...currentArray, ...generatedEng]);
       }
-      if (language === CHINESE_MODE) {
-        const generatedChinese = chineseWordsGenerator(
-          difficulty,
-          CHINESE_MODE
-        );
-        setWordsDict((currentArray) => [...currentArray, ...generatedChinese]);
-      }
+      // if (language === CHINESE_MODE) {
+      //   const generatedChinese = chineseWordsGenerator(
+      //     difficulty,
+      //     CHINESE_MODE
+      //   );
+        //setWordsDict((currentArray) => [...currentArray, ...generatedChinese]);
+     // }
     }
     if (
       currWordIndex !== 0 &&
@@ -192,9 +189,9 @@ const TypeBox = ({
   const reset = (newCountDown, difficulty, language, isRedo) => {
     setStatus("waiting");
     if (!isRedo) {
-      if (language === CHINESE_MODE) {
-        setWordsDict(chineseWordsGenerator(difficulty, language));
-      }
+      // if (language === CHINESE_MODE) {
+      //   setWordsDict(chineseWordsGenerator(difficulty, language));
+      // }
       if (language === ENGLISH_MODE) {
         setWordsDict(wordsGenerator(DEFAULT_WORDS_COUNT, difficulty, language));
       }
@@ -504,41 +501,41 @@ const TypeBox = ({
     }
   };
 
-  const getChineseWordKeyClassName = (wordIdx) => {
-    if (wordsInCorrect.has(wordIdx)) {
-      if (currWordIndex === wordIdx) {
-        return "chinese-word-key error-chinese active-chinese";
-      }
-      return "chinese-word-key error-chinese";
-    } else {
-      if (currWordIndex === wordIdx) {
-        return "chinese-word-key active-chinese";
-      }
-      return "chinese-word-key";
-    }
-  };
+  // const getChineseWordKeyClassName = (wordIdx) => {
+  //   if (wordsInCorrect.has(wordIdx)) {
+  //     if (currWordIndex === wordIdx) {
+  //       return "chinese-word-key error-chinese active-chinese";
+  //     }
+  //     return "chinese-word-key error-chinese";
+  //   } else {
+  //     if (currWordIndex === wordIdx) {
+  //       return "chinese-word-key active-chinese";
+  //     }
+  //     return "chinese-word-key";
+  //   }
+  // };
 
-  const getChineseWordClassName = (wordIdx) => {
-    if (wordsInCorrect.has(wordIdx)) {
-      if (currWordIndex === wordIdx) {
-        if (pacingStyle === PACING_PULSE) {
-          return "chinese-word error-word active-word";
-        } else {
-          return "chinese-word error-word active-word-no-pulse";
-        }
-      }
-      return "chinese-word error-word";
-    } else {
-      if (currWordIndex === wordIdx) {
-        if (pacingStyle === PACING_PULSE) {
-          return "chinese-word active-word";
-        } else {
-          return "chinese-word active-word-no-pulse";
-        }
-      }
-      return "chinese-word";
-    }
-  };
+  // const getChineseWordClassName = (wordIdx) => {
+  //   if (wordsInCorrect.has(wordIdx)) {
+  //     if (currWordIndex === wordIdx) {
+  //       if (pacingStyle === PACING_PULSE) {
+  //         return "chinese-word error-word active-word";
+  //       } else {
+  //         return "chinese-word error-word active-word-no-pulse";
+  //       }
+  //     }
+  //     return "chinese-word error-word";
+  //   } else {
+  //     if (currWordIndex === wordIdx) {
+  //       if (pacingStyle === PACING_PULSE) {
+  //         return "chinese-word active-word";
+  //       } else {
+  //         return "chinese-word active-word-no-pulse";
+  //       }
+  //     }
+  //     return "chinese-word";
+  //   }
+  //};
 
   const getCharClassName = (wordIdx, charIdx, char, word) => {
     const keyString = wordIdx + "." + charIdx;
@@ -651,7 +648,7 @@ const TypeBox = ({
           </div>
         </div>
       )}
-      {language === CHINESE_MODE && (
+      {/* {language === CHINESE_MODE && (
         <div className="type-box-chinese">
           <div className="words">
             {words.map((word, i) => (
@@ -679,7 +676,7 @@ const TypeBox = ({
             ))}
           </div>
         </div>
-      )}
+      )} */}
       <div className="stats">
         <Stats
           status={status}
@@ -773,7 +770,7 @@ const TypeBox = ({
                     title={
                       language === ENGLISH_MODE
                         ? DEFAULT_DIFFICULTY_TOOLTIP_TITLE
-                        : DEFAULT_DIFFICULTY_TOOLTIP_TITLE_CHINESE
+                        : null
                     }
                   >
                     <span
@@ -794,7 +791,7 @@ const TypeBox = ({
                     title={
                       language === ENGLISH_MODE
                         ? HARD_DIFFICULTY_TOOLTIP_TITLE
-                        : HARD_DIFFICULTY_TOOLTIP_TITLE_CHINESE
+                       : null
                     }
                   >
                     <span
@@ -819,7 +816,7 @@ const TypeBox = ({
                     </span>
                   </Tooltip>
                 </IconButton>
-                <IconButton
+                {/* <IconButton
                   onClick={() => {
                     reset(countDownConstant, difficulty, CHINESE_MODE, false);
                   }}
@@ -829,7 +826,7 @@ const TypeBox = ({
                       chn
                     </span>
                   </Tooltip>
-                </IconButton>
+                </IconButton> */}
               </Box>
             )}
             {menuEnabled && (
