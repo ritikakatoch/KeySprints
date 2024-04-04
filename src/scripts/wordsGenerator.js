@@ -1,13 +1,10 @@
 import randomWords from "random-words";
 import {
-  COMMON_WORDS,
-  COMMON_CHINESE_WORDS,
-  COMMON_CHINESE_IDIOMS_WORDS,
+  COMMON_WORDS
 } from "../constants/WordsMostCommon";
 import {
   DEFAULT_DIFFICULTY,
   ENGLISH_MODE,
-  CHINESE_MODE,
   DEFAULT_WORDS_COUNT,
 } from "../constants/Constants";
 import { randomIntFromRange } from "./randomUtils";

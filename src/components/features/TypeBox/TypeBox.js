@@ -111,9 +111,9 @@ const TypeBox = ({
     return wordsDict.map((e) => e.val);
   }, [wordsDict]);
 
-  const wordsKey = useMemo(() => {
-    return wordsDict.map((e) => e.key);
-  }, [wordsDict]);
+  // const wordsKey = useMemo(() => {
+  //   return wordsDict.map((e) => e.key);
+  // }, [wordsDict]);
 
   const wordSpanRefs = useMemo(
     () =>
