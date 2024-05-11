@@ -1,133 +1,61 @@
 # Key Sprints
 
-<img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="https://user-images.githubusercontent.com/39578778/187084111-97d69aa7-53e4-46b9-b156-3ecc4d180d08.png">
+<img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="./images/KeysprintsMain.png">
 
-An elegant typing test tool.
+# Typing Master - English Edition
 
-> Typing rule and interactions was inspired by the famous [monkeytype.com](www.monkeytype.com);
+Welcome to Typing Master - English Edition! This versatile typing tool offers a range of features to enhance your typing skills and make practice enjoyable.
 
-> The app was created purely in react.
+## Features:
 
-## Current Features:
+### 1. Typing Test
+- **Words Mode**: Practice typing English words or sentences.
+  - Eng Hard: Random blogs words data source.
+  - Eng Normal: Top 1000 most frequently used English words.
+  - Numbers and Symbols: Add random numbers (0-99) or symbols to words.
+  - Duration: Choose from 15s, 30s, 60s, or 90s tests.
+- **Sentence Mode**: Practice typing English sentences.
+  - ENG: Random English short sentences.
+  - Sentence Count: Choose from 5, 10, or 15 sentences.
 
-#### 1. Typing Test (words, sentence)
+### 2. Words Card (for English Learners)
+- Study English vocabulary from various sources like GRE, TOEFL.
+- Navigate through multi-chapter selections.
+- Recite Mode: Test your memory by hiding word visibility while showing phrases.
+<img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="./images/wordCards.png">
 
-  - words mode
-    - Eng Hard: Random blogs Words data source
-    - Eng Normal: Top 1000 most frequent used English words
-    - CHN Pinyin Hard: Chinese top 1500 idioms
-    - CHN Pinyin Normal: Chinese top 5000 words/char
-    - support four tests duration 90s, 60s, 30s, 15s
-  - Sentence mode
-    - CHN: Random chinese short sentences
-    - ENG: Random English short sentences
-    - Support three sentences count setting: 5, 10, 15
-  - Stats:
-    - WPM
-    - KPM
-    - Accuracy
-    - Error analysis (correct/error/missing/extra chars count)
-  - Pacing Style (word pulse/ character caret):
-    - Pulse mode: the active word will have an underline pulse, which helps improve the speed typing habit.
-    - Caret mode: a pacing caret, advancing character by character, which aligns normal typing habit.
+### 3. Coffee Mode
+- Free typing mode for practicing anything.
 
-#### 2. Words Card (for English learners)
+### 4. QWERTY Keyboard Touch-Typing Trainer
+- Train on a QWERTY keyboard layout with random keys for touch typing. Track your progress with stats.
+<img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="./images/qwertytyping.png">
 
-  - Vocabulary Source
-    - GRE vocab
-    - TOEFL
-    - CET6
-    - CET4
-  - Multi Chapters Selection
-  - Words Card Navigation UI
-  - Recite Mode (word visibility off while phrase shown)
-  
-#### 3. Coffee Mode
+### 5. Spotify Player
+- Access the Spotify player for listening to your favorite tunes while typing.
+<img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="./images/spotifyMode.png">
 
- - free typing mode for test typing anything
+### 6. Themes Collection
+- Choose from a variety of static and dynamic themes to customize your typing environment.
+<img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="./images/themes.png">
 
-#### 4. QWERTY Keyboard touch-typing trainer 
+### 7. LocalStorage Persistence
+- Essential settings are stored in LocalStorage, ensuring your preferences are retained even after browser refresh.
 
- - A QWERTY keyboard layout UI populating random key for touch typing with stats
+### 8. Focus Mode
+- Optimize your typing practice by moving the header to the footer and hiding the settings menu.
 
-#### 5. Spotify player
+### 9. Typing Sound Effect
+- Enjoy typing with different sound effects, including cherry blue switch, keyboard, or typewriter.
+<img width="1000" alt="Screen Shot 2022-08-28 at 9 15 36 AM" src="./images/sounds.png">
 
- - A spotify player 
- 
-#### 6. Themes Collection
-
-  - Dark
-  - Piano
-  - Aluminum
-  - Terminal (matrix inspired)
-  - Cyber (cyberpunk inspired)
-  - Steam (steampunk inspired)
-  - Light
-  - Nintendo
-  - Araki Nobuyoshi
-  - Hero
-  - Budapest
-  - Cool Kid
-  - EdgeRunner (cyberpunk 2077 edgerunners episodes inspired)
-
-#### 7. LocalStorage persist for essential settings
-
-  - Browser refresh will bring back to the localStorage stored settings
-
-#### 8. Focus Mode
-
-  - move header to footer. 
-  - hide the setting menu. leave only timer, wpm stats. 
-  - If music enabled, a compact spotify will be put in footer.
- 
-#### 9. Typing Sound Effect 
-
-  - default: cherry blue switch
-  - optional: keyboard (hard)
-  - optional: typewriter (soft)
-  
-  <img width="120" alt="Screen Shot 2022-09-29 at 2 01 51 AM" src="https://user-images.githubusercontent.com/39578778/192989337-637e1154-fbca-420b-babb-22846d5dbdb1.png">
-  
-#### 10. [Tab] key to Fast redo/reset
-
-  - [Tab] + [Space] for quickly redo
-  - [Tab] + [Enter] / [Tab] + [Tab] for quickly reset
-  - [Tab] + [Any Key] to exit the dialog
-
-
-### Some Themes
-
-<img width="600" alt="EletypesThemes" src="https://user-images.githubusercontent.com/39578778/187084245-364b6c5f-97e4-42c9-a0c6-010505ad3283.png">
+### 10. Fast Redo/Reset with [Tab] Key
+- Use [Tab] key shortcuts for quick redo/reset actions.
 
 ### Caps Lock Detection
+- Caps Lock detection feature to help improve typing accuracy.
 
-<img width="400" alt="Screen Shot 2022-04-20 at 4 52 24 PM" src="https://user-images.githubusercontent.com/39578778/164343051-2de97570-fcec-49a4-893a-903afe94e5f4.png">
+### Simplified Typing Stats
+- View simplified typing statistics to track your progress effortlessly.
 
-### Simplist typing stats is all your need
-
-<img width="800" alt="Screen Shot 2022-08-28 at 9 24 55 AM" src="https://user-images.githubusercontent.com/39578778/187084372-a4d18d33-286e-4e7b-97d0-d069c7fd1d53.png">
-
-### Words Card Demo
-
-Regular Mode and Recite Mode
-
-<img width="400" alt="Screen Shot 2022-08-23 at 12 47 53 AM" src="https://user-images.githubusercontent.com/39578778/186102023-7db8bfc2-f481-4a90-98c2-f47ad66c12cd.png"><img width="400" alt="Screen Shot 2022-08-23 at 12 48 22 AM" src="https://user-images.githubusercontent.com/39578778/186102059-cb7d43a4-a9d3-4728-90f9-2965038ed24c.png">
-
-### QWERTY Touch-Typing Trainer Demo
-
-<img width="800" alt="Screen Shot 2022-08-23 at 12 52 17 AM" src="https://user-images.githubusercontent.com/39578778/186102830-4c664e9a-adfa-48dc-ba8c-e03df4e22ade.png">
-
-
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-
-### `npm run build`
-
-
-Builds the app for production to the `build` folder.\
-
-
+Explore KeySprints - English Edition and take your typing skills to the next level!
